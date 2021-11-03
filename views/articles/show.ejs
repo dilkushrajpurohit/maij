@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Blogs</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div class="container">
+<h1 class="mb-4"><%= article.title %></h1>
+<div class="text-muted mb-2"><%= article.createAt.toLocaleDateString() %></div>
+<a href="/" class="btn btn-secondary">All Articels</a>
+<a href="/articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
+<div>
+	<%= article.markdown%>
+</div>
+
+</div>
+</body>
+</html>
