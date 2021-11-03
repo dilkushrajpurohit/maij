@@ -9,7 +9,7 @@ app.use('/articles',articlerouter)
 
 const port=process.env.PORT||400
 mongoose
-     .connect( process.env.MONGODB_URI, { useNewUrlParser: true,  useUnifiedTopology: true })
+     .connect( process.env.MONGODB_URL, { useNewUrlParser: true,  useUnifiedTopology: true })
      .then(() => console.log( 'Database Connected' ))
      .catch(err => console.log( err ));
 
